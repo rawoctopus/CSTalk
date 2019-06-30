@@ -1,7 +1,13 @@
 # Database
 </br>
 
-### Indexing
+## Outline
+- [Indexing](##Indexing)
+- [DAO, DTO](##DAO,-DTO)
+
+</br>
+
+## Indexing
 
 ##### Index란?
   - 데이터에 빠르게 접근하기 위하여 (검색, 정렬 등) 
@@ -28,9 +34,9 @@
 - B+-Tree vs 해시 인덱스
   - 데이터에 접근하는 속도는 해시가 O(1)이기 때문에 더 빠를 것 같지만, SELECT 질의에는 부등호 연산이 주로 포함된다. 특정 범위에 속하는 데이터를 찾는 경우가 많으므로, B+-Tree가 대부분에 경우에 적합하다.
 
+</br>
 
-
-### DAO, DTO
+## DAO, DTO
 
 ##### DAO, DTO 정의
   - DAO : Data Access Object의 약자로써, 데이터 베이스에 접속, 명령 전송을 담당하는 객체이다. 비즈니스 로직과 분리하기 위해 사용된다.
