@@ -2,8 +2,8 @@
 </br>
 
 ## Outline
-- [Indexing](##Indexing)
-- [DAO, DTO](##DAO,-DTO)
+- [Indexing](#indexing)
+- [DAO, DTO](#dao-dto)
 
 </br>
 
