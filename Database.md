@@ -20,3 +20,70 @@
   - 데이터의 중복도가 낮은 경우 (타입이 별로 없는 경우 X)
 
 
+### DAO, DTO
+
+##### DAO, DTO 정의
+  - DAO : Data Access Object의 약자로써, 데이터 베이스에 접속, 명령 전송을 담당하는 객체이다. 비즈니스 로직과 분리하기 위해 사용된다.
+    ~~~Java
+    //DAO
+    public class DEPT_DAO {
+    DEPT_DAO(){}
+    
+    //insert
+    public int insert(DEPT_DTO dto){
+        
+        return -1;
+    }
+    
+    //select
+    public ArrayList<DEPT_DTO> select() {
+        
+        return null;
+    }
+    
+    //update
+    public int update(DEPT_DTO dto) {
+        
+        return -1;
+    }
+    
+    //delete
+    public int delete(int deptno) {
+        
+        return -1;
+    }
+    }
+    ~~~
+    
+  - DTO : Data Transfer Object의 약자로써, 하나의 클래스를 하나의 클래스에 매칭 시키기 위해 사용. VO 개념.
+    ~~~Java
+    public class DEPT_DTO {
+    private int deptno;
+    private String dname;
+    private String loc;
+    
+    public int getDeptno() {
+        return deptno;
+    }
+    
+    public void setDeptno(int deptno) {
+        this.deptno = deptno;
+    }
+    
+    public String getDname() {
+        return dname;
+    }
+    
+    public void setDname(String dname) {
+        this.dname = dname;
+    }
+    
+    public String getLoc() {
+        return loc;
+    }
+    
+    public void setLoc(String loc) {
+        this.loc = loc;
+    }
+    }
+    ~~~
