@@ -61,10 +61,12 @@
 - 서로 다른 시스템에 프로세스끼리 메시지를 주고받는 것이라면 소켓을 선택 
 - 연결형모델 TCP / 비연결형 UDP
 
-  참고
-  1. https://jwprogramming.tistory.com/54
-  2. https://gomoveyongs.tistory.com/m/67
+참고
+1. https://jwprogramming.tistory.com/54
+2. https://gomoveyongs.tistory.com/m/67
 
 </br>
+
+
 
 
