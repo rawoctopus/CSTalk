@@ -93,12 +93,14 @@
 - fully associative
 - direct map
 - set associative
+
 참고 : http://egloos.zum.com/rantis7/v/2879608
 
 ## 스케줄링
 #### Stride Scheduling
 - 비결정적인(Non-deterministic) Lottery에 반해서 결정적인(deterministic)스케줄링 방식
 - 티켓 수에 역수를 취한 값을 stride라 하고, stride 값에 따라 pass 값을 갱신하고 pass 값에 따라 스케줄링 하는 방식.
+
 참고 : https://wkdtjsgur100.github.io/scheduling-1/
 
 
