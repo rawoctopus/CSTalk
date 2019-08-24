@@ -85,3 +85,17 @@
      | reliable data transmission (신뢰성 있는 데이터 전송, 안정적) | unreliable data transmission (데이터 전송 보장 x)         |
      |      TCP packet : segment (데이터 전송 단위는 세그먼트)      | UDP packet : datagram (데이터 전송 단위는 데이터 그램)    |
      |                  HTTP, Email, File transfer                  | DNS, Boradcasting (도메인, 실시간 동영상 서비스에서 사용) |
+
+<br>
+
+## HTTP와 HTTPS
+- HTTP
+  - HyperText Transfer Protocol
+  - 웹서버와 사용자의 인터넷 브라우저 사이에 문서를 전송하기 위한 통신 규약
+  - 암호화가 전혀 되어 있지 않은 프로토콜
+  
+- HTTPS
+  - HTTP + over Secure socket layer
+  - http에 보안을 강화한 프로토콜로 패킷을 암호화하여 전송
+  - L4 전송계층에서 암호화가 이루어짐 -> TLS(Transport Layer Security)
+  - 암호화 과정 때문에 HTTP보다 속도가 느리지만, 요즘은 인터넷 속도의 향상으로 사실상 큰 차이 없음
