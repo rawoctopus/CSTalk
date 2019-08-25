@@ -4,6 +4,9 @@
 ## Outline
 - [Indexing](#indexing)
 - [DAO, DTO](#dao-dto)
+- [SQL문법] (#SQL문법)
+- [데이터베이스 CRUD] (#데이터베이스-CRUD)
+- [Sharding] (#Sharding)
 
 </br>
 
@@ -103,7 +106,7 @@
     }
     }
     ~~~
-## DDL, DML, DCL, TCL
+## SQL문법
 ##### DDL(데이터 정의어)
 - 테이블과 같은 데이터 구조를 정의. 
 - CREATE, ALTER, DROP, RENAME, TRUNCATE
@@ -116,11 +119,15 @@
 ##### TCL (트랜잭션 제어어)
 - 논리적인 작업의 단위를 묶어서 DML에 의해 조작된 결과를 작업단위(트랜잭션) 별로 제어
 - COMMIT, ROLLBACK, SAVEPOINT
-            
-## 데이터베이스 CRUD란?
+    
+</br>
+
+## 데이터베이스 CRUD
 - CRUD는 대부분의 컴퓨터 소프트웨어가 가지는 기본적인 데이터 처리 기능인 Create, Read, Update, Delete를 묶어서 일컫는 말 사용자 인터페이스가 갖추어야 할 기능을 가리키는 용어로서도 사용함
         
-## Sharding이란?
+</br>
+
+## Sharding
 - RDBMS에서 대량의 데이터를 처리하기 위해 데이터를 파티셔닝하는 기술
 - 데이터베이스 자체를 분할해야 하므로 어플리케이션 레벨에서 구현
 - 참고 : https://genesis8.tistory.com/211
