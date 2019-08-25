@@ -105,25 +105,25 @@
     ~~~
 ## DDL, DML, DCL, TCL
 ##### DDL(데이터 정의어)
-            * 테이블과 같은 데이터 구조를 정의. 
-            * CREATE, ALTER, DROP, RENAME, TRUNCATE
+- 테이블과 같은 데이터 구조를 정의. 
+- CREATE, ALTER, DROP, RENAME, TRUNCATE
 ##### DML (데이터 조작어)
-            * 데이터를 조회하거나 검색하기 위한 명령어
-            * SELECT, INSERT, DELETE, UPDATE
+- 데이터를 조회하거나 검색하기 위한 명령어
+- SELECT, INSERT, DELETE, UPDATE
 ##### DCL (데이터 제어어)
-            * 데이터베이스에 접근하고 객체들을 사용하도록 권한을 주고 회수하는 명령어
-            * GRANT, REVOKE
+- 데이터베이스에 접근하고 객체들을 사용하도록 권한을 주고 회수하는 명령어
+- GRANT, REVOKE
 ##### TCL (트랜잭션 제어어)
-            * 논리적인 작업의 단위를 묶어서 DML에 의해 조작된 결과를 작업단위(트랜잭션) 별로 제어
-            * COMMIT, ROLLBACK, SAVEPOINT
+- 논리적인 작업의 단위를 묶어서 DML에 의해 조작된 결과를 작업단위(트랜잭션) 별로 제어
+- COMMIT, ROLLBACK, SAVEPOINT
             
 ## 데이터베이스 CRUD란?
-        * CRUD는 대부분의 컴퓨터 소프트웨어가 가지는 기본적인 데이터 처리 기능인 Create, Read, Update, Delete를 묶어서 일컫는 말 사용자 인터페이스가 갖추어야 할 기능을 가리키는 용어로서도 사용함
+- CRUD는 대부분의 컴퓨터 소프트웨어가 가지는 기본적인 데이터 처리 기능인 Create, Read, Update, Delete를 묶어서 일컫는 말 사용자 인터페이스가 갖추어야 할 기능을 가리키는 용어로서도 사용함
         
 ## Sharding이란?
-        * RDBMS에서 대량의 데이터를 처리하기 위해 데이터를 파티셔닝하는 기술
-        * 데이터베이스 자체를 분할해야 하므로 어플리케이션 레벨에서 구현
-        * https://genesis8.tistory.com/211
+- RDBMS에서 대량의 데이터를 처리하기 위해 데이터를 파티셔닝하는 기술
+- 데이터베이스 자체를 분할해야 하므로 어플리케이션 레벨에서 구현
+- 참고 : https://genesis8.tistory.com/211
 
 
 
