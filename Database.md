@@ -4,9 +4,9 @@
 ## Outline
 - [Indexing](#indexing)
 - [DAO, DTO](#dao-dto)
-- [SQL문법] (#SQL문법)
-- [데이터베이스 CRUD] (#데이터베이스-CRUD)
-- [Sharding] (#Sharding)
+- [SQL문법](#SQL문법)
+- [데이터베이스 CRUD](#데이터베이스-CRUD)
+- [Sharding](#Sharding)
 
 </br>
 
