@@ -155,11 +155,15 @@
   #### 4. APPLICATION 계층
   - 이러한 서버와 클라이언트를 만드는 과정에서 프로그램의 성격에 따라 데이터 송수신에 대한 약속(규칙)들이 정해지기 마련인데, 이를 가리켜 Aplication 프로토콜이라한다.
 
+<br>
+
 ## Multi-Thread 서버
   - 듣기 소켓을 통해서 새로운 클라이언트가 들어오면 fork 함수를 이용해서 자식 프로세스를 만드는 대신에, pthread_create 함수를 이용해서 새로운 스레드를 만드는 것이다. 이 스레드는 문맥을 포함한 코드 조각으로 듣기 소켓의 소켓 지정 번호를 매개 변수로 받아들일 수 있다. 이 듣기 소켓을 이용해서 클라이언트를 처리하는 식이다.
   - 핵심은 서버 프로그램이 듣기 소켓과 연결 소켓이 분리되어 있는데, 듣기 소켓에 클라이언트 연결이 들어와서 연결 소켓이 만들어 지면, 스레드를 만들어 클라이언트 요청을 처리하는데 있다. (대리자)
   - 스레드는 코드 조각이므로 프로세스를 복사하는 멀티 프로세스 방식보다 좀 더 작고 빠르게 작동하는 프로그램을 만들 수 있다. 반면 독립된 프로세스 단위로 구동되지 않기 때문에, 디버깅이 힘들다는 단점이 있다. 또한 하나의 스레드에 생긴 문제가 전체 프로세스에 문제를 줄 수 있다는 문제점도 있다.
   - 구현 예제 : https://www.joinc.co.kr/w/Site/Network_Programing/Documents/Multi_thread
+
+<br>
 
 ## HTTP keep alive
 #### 정의
@@ -183,4 +187,6 @@
     server도 http 1.1 spec을 구현하고 keep alive 기능을 활성화하고 keep alive time out을 설정
 
 #### 참고
-https://b.pungjoo.com/entry/HTTP-11-Keep-Alive-기능에-대해 [pungjoo]
+https://b.pungjoo.com/entry/HTTP-11-Keep-Alive-%EA%B8%B0%EB%8A%A5%EC%97%90-%EB%8C%80%ED%95%B4
+
+<br>
