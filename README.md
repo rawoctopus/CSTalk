@@ -4,4 +4,6 @@
 - OS  
 - Database  
 - Network  
+- Computer Architecture
 - Design pattern  
+- OOP
