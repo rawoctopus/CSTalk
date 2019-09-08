@@ -4,7 +4,7 @@
 </br>
 
 ## Outline
-- [Buffering vs Spooling](##-Buffering-vs-Spooling)
+- [Buffering vs Spooling](#buffering-vs-spooling)
 
 
 </br>
