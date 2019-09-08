@@ -110,9 +110,29 @@
 ##### DDL(데이터 정의어)
 - 테이블과 같은 데이터 구조를 정의. 
 - CREATE, ALTER, DROP, RENAME, TRUNCATE
+- 
+  ```sql
+  CREATE TABLE T(A NUMBER, B VARCHAR2(100));
+  CREATE INDEX I ON T(B,A);
+  CREATE VIEW V AS SELECT B FROM T WHERE A>1;
+  ALTER TABLE T ADD CONSTRAINT PK_T PRIMARY KEY (A);
+  DROP INDEX II;
+  ```
+
 ##### DML (데이터 조작어)
 - 데이터를 조회하거나 검색하기 위한 명령어
 - SELECT, INSERT, DELETE, UPDATE
+- MERGE(대상 테이블과 비교 테이블 간에 조건을 지정하여 만족할 때와 아닐 때와 동작을 다르게 하는 것) ⇒ upsert 느낌
+- ```sql
+  SELECT A FROM T WHERE B>1;
+  INSERT INTO T VALUES(10, 20);
+  UPDATE T SET C=11 WHERE B=1;
+  DELETE FROM T WHERE B=1;
+  
+  MERGE INTO T USING S ON(T.A=S.C)
+  WHEN MATCHED THEN UPDATE SET T.B=99
+  WHEN NOT MATCHED THEN INSERT VALUES(S.C,S.D)
+  ```
 ##### DCL (데이터 제어어)
 - 데이터베이스에 접근하고 객체들을 사용하도록 권한을 주고 회수하는 명령어
 - GRANT, REVOKE
