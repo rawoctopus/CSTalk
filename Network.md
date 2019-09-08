@@ -47,6 +47,37 @@
   - 캐싱할 수 없다.
   
 <br>
+
+## URL vs URL
+
+### URI (Uniform Resource Identifier)
+통합 자원 식별자.
+- rewrite
+    - rewrite 기술을 이용하여 만든 의미있는 식별자
+    - [http://localhost/service/Customer](http://localhost/service/Customer) → [http://localhost/Customer](http://localhost/Customer)
+    - [http://www.store.com/products.aspx?category=books](http://www.store.com/products.aspx?category=books) → http://www.store.com/products/category/books
+- REST 서비스
+    - url로 실행되는 서비스
+    - [https://www.google.co.kr/search?q=uri](https://www.google.co.kr/search?q=uri)
+- Web-oriented architecture
+    - kakaotalk://sendmsg?text=hello! (kakaotalk 프로토콜을 해석할 수 있는 프로그램이 핸들링.)
+
+### URL (Uniform Resource Locator)
+자원. 파일의 위치.
+URL은 URI의 특별한 형태이자 부분 집합으로 볼 수 있다.
+- [http://example.xxx/blog/sample.pdf](http://example.xxx/sample.pdf)
+
+### Example
+
+**URI**  
+주소가 [http://](http://naver.com)example.xxx/blog/category 라고 했을 때, 요청하는 주소가 파일이라기 보다는 구분자가 되는 것,
+실제로 해당 웹사이트에 blog/category 라는 파일은 없다.
+
+**URL**  
+[http://example.xxx/blog/sample.pdf](http://example.xxx/sample.pdf)
+[example.xxx](http://example.xxx) 서버에서 blog라는 폴더 안의 sample.pdf를 요청하는 것.
+  
+<br>
   
 ## 브라우저에서 주소창에 URL 입력시
   - 브라우저의 주소창에 URL 입력
